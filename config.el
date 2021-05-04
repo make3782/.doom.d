@@ -6,8 +6,13 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
-(setq user-full-name "John Doe"
-      user-mail-address "john@doe.com")
+(setq user-full-name "wzx"
+      user-mail-address "zhaoxuanwang@rdchina.net")
+
+
+;; 加载snippets
+(after! yasnippet
+  (push (expand-file-name "snippets/" doom-private-dir) yas-snippet-dirs))
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -24,8 +29,8 @@
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+;k `load-theme' function. This is the default:
+;;(setq doom-theme 'doom-one)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -52,3 +57,7 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; 个人配置Modules
+(load! "+ui")      ;; ui设置
+(load! "+keyboard")     ;; 我的自定义键
