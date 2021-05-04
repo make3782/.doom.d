@@ -25,7 +25,11 @@
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
 (setq doom-font (font-spec :family "Menlo" :size 12 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "sans" :size 13))
+      doom-variable-pitch-font (font-spec :family "Menlo" :size 13))
 
 ;;设置行间距
 (setq-default line-spacing 5)
+
+;;-_为单词的一部分
+(modify-syntax-entry ?- "w")
+(modify-syntax-entry ?_ "w")
