@@ -14,6 +14,7 @@
 (after! yasnippet
   (push (expand-file-name "snippets/" doom-private-dir) yas-snippet-dirs))
 
+
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
 ;;
@@ -40,6 +41,8 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+;;(setq which-key-idle-delay 0.1)
+
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
@@ -62,7 +65,12 @@
 (load! "+ui")      ;; ui设置
 (load! "+keyboard")     ;; 我的自定义键
 
-;(package! window-numbering)
-;(use-package! window-numbering
+(use-package! window-numbering
   ;:ensure t
-  ;:config ( window-numbering-mode ))
+  :config ( window-numbering-mode ))
+
+(after! php
+    (defface php-variable-sigil '((t (:inherit font-lock-variable-name-face)))
+      "PHP Mode face used to highlight variable sigils ($)."
+      :group 'php-faces)
+)

@@ -85,6 +85,14 @@
   )
 (bind-key* "M-j" 'match-paren)
 
+;; 设置注释
+(map! "M-;" #'comment-dwim-2)
+
+;; counsol目录下进入上下级目录
+(map! :map counsel-find-file-map
+      "C-l" #'counsel-up-directory
+      "C-j" #'counsel-down-directory)
+
 ;; leader key相关
 (map! :leader
       :prefix "p"
