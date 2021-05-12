@@ -75,3 +75,7 @@
       "PHP Mode face used to highlight variable sigils ($)."
       :group 'php-faces)
 )
+;; 关闭实时检查，只在保存和页面刚打开时候检查
+(after! flycheck
+  (setq lsp-flycheck-live-reporting nil)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled)))
