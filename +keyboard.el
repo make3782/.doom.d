@@ -99,10 +99,10 @@
       :desc "项目内搜索" "s" #'+ivy/project-search)
 (map! :leader
       :prefix "g"
-      :desc "项目内搜索" "s" #'magit-status)
+      :desc "magit" "s" #'magit-status)
 (map! :leader
       :prefix "i"
       :desc "函数列表" "i" #'counsel-imenu)
 
 (map! :leader
-      "SPC" #'counsel-M-x)
+      :desc "执行 M-x" "SPC" #'counsel-M-x)
