@@ -49,8 +49,8 @@
          (newline-and-indent)
          (evil-insert-state)
          ))
-(define-key global-map (kbd "C-o") 'newline-next-current)
-(define-key evil-normal-state-map (kbd "C-o") 'newline-next-current)
+;; (define-key global-map (kbd "C-o") 'newline-next-current)
+;; (define-key evil-normal-state-map (kbd "C-o") 'newline-next-current)
 (define-key global-map (kbd "M-o") 'newline-above-current)
 
 
