@@ -1,6 +1,7 @@
 ;;; +ui.el -*- lexical-binding: t; -*-
 
-(setq doom-theme 'doom-snazzy)
+;; (setq doom-theme 'doom-snazzy)
+(setq doom-theme 'arc-dark)
 
 
 ;; orgmode将日历显示为中文的星期
@@ -10,7 +11,6 @@
 ;;设置tab为4个空格
 (setq-default tab-width 4)
 (setq-default c-basic-offset 4)
-(setq-default default-tab-width 4)
 (setq-default default-tab-width 4)
 
 
