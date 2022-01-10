@@ -106,3 +106,8 @@
 
 (map! :leader
       :desc "执行 M-x" "SPC" #'counsel-M-x)
+
+;; (define-key! evil-normal-state-map "gh" #'+lookup/documentation)
+;; (map!
+;;  :prefix "g" :nv "h" #'+lookup/documentation
+;;  )

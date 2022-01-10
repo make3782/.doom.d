@@ -1,7 +1,10 @@
 ;;; +ui.el -*- lexical-binding: t; -*-
 
 ;; (setq doom-theme 'doom-snazzy)
-(setq doom-theme 'arc-dark)
+;; 热爱排行榜:
+;; - gruber-darker
+;; - planet-theme
+(setq doom-theme 'planet)
 
 
 ;; orgmode将日历显示为中文的星期
@@ -24,8 +27,9 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "Menlo" :size 12 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "Menlo" :size 13))
+(setq doom-font (font-spec :family "hack" :size 12 :weight 'semi-light)
+      doom-unicode-font (font-spec :family "hack" :size 14)
+      doom-variable-pitch-font (font-spec :family "Menlo" :size 12))
 
 ;;设置行间距
 (setq-default line-spacing 5)
